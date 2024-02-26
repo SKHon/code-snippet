@@ -1,6 +1,6 @@
 {
-  "name": "code-snippet",
-  "version": "0.0.1",
+  "name": "skhon-code-snippet",
+  "version": "0.0.5",
   "description": "code to snippet",
   "main": "index.js",
   "scripts": {
