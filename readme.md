@@ -1,9 +1,15 @@
 ## 使用
-### 安装
-npm i skhon-code-snippet
 
-### 代码
+### 介绍
+在代码检测中，如果检测出某行代码某列有问题，则需要标记出来。code-snippet就是将代码中的目标代码标记出来，并返回指定行数的代码片段。
+
+### 安装
+```bash
+$ npm i skhon-code-snippet
 ```
+
+### 使用
+```javascript
 const getSnippet = require('skhon-code-snippet').default;
 const code = `const { SyncHook } = require("tapable");
 const accelerate = new SyncHook(["newSpeed"]);
@@ -21,5 +27,4 @@ accelerate.call(500);`;
 
 const snippet = getSnippet(code, 9, 3);
 console.log(snippet);
-
 ```
