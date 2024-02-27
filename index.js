@@ -1,12 +1,12 @@
 exports.default = function getSnippet(code, lineNumber, colNumber, marker = '^', numbers = 7) {
-  const lines = code.split('\n');
-  let codes = '';
-  let topLines = [];
-  let bottomLines = [];
-
-  const halfLineNumber = Math.floor(numbers/2);
+  
   try {
-    
+    const lines = code.split('\n');
+    let codes = '';
+    let topLines = [];
+    let bottomLines = [];
+
+    const halfLineNumber = Math.floor(numbers/2);
     let topSetp = 0;
     for(let i = 1; i <= halfLineNumber; i++) {
       if (lineNumber - i > 0) {
@@ -41,6 +41,6 @@ exports.default = function getSnippet(code, lineNumber, colNumber, marker = '^',
 
     return codes;
   } catch(e) {
-    throw new Error('The provided line and/or column number is out of range');
+    throw new Error(e);
   }
 }
