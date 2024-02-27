@@ -1,0 +1,20 @@
+# dependencies
+**/node_modules
+
+# production
+/dist
+/.vscode
+.idea
+/output
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+yarn.lock
+.idea/
+
+.vscode/snippet.code-snippets
+
+package-lock.json
+coverage

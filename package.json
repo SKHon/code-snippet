@@ -1,10 +1,10 @@
 {
   "name": "skhon-code-snippet",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "code to snippet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SKHon/code-snippet/issues"
   },
-  "homepage": "https://github.com/SKHon/code-snippet#readme"
+  "homepage": "https://github.com/SKHon/code-snippet#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
